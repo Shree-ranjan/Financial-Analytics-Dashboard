@@ -1,0 +1,277 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# AI/ML Specific Files
+# ==================
+
+# Model files
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+*.pb
+*.onnx
+*.tflite
+*.pt
+*.pth
+*.safetensors
+
+# Data files
+*.csv
+*.json
+*.parquet
+*.feather
+*.xlsx
+*.xls
+data/raw/*
+data/processed/*
+data/cache/*
+data/external/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/cache/.gitkeep
+
+# Model outputs
+outputs/models/*
+outputs/reports/*
+outputs/charts/*
+outputs/logs/*
+!outputs/models/.gitkeep
+!outputs/reports/.gitkeep
+!outputs/charts/.gitkeep
+
+# Logs and temporary files
+logs/
+*.log
+*.out
+*.err
+temp/
+tmp/
+
+# Machine Learning
+mlruns/
+.mlflow/
+wandb/
+tensorboard_logs/
+checkpoints/
+saved_models/
+
+# Jupyter notebooks (optional - comment out if you want to include them)
+# *.ipynb
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# API Keys and Secrets
+# ===================
+.env
+.env.local
+.env.*.local
+config/secrets.py
+secrets/
+api_keys.txt
+*.key
+*.pem
+*.crt
+
+# IDE and Editor files
+# ===================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/
+
+# FastAPI
+.pytest_cache/
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*.tmp
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+*.lnk
+
+# Linux
+*~
+
+# MacOS
+.AppleDouble
+.LSOverride
+
+# Essential project files to KEEP
+# ===============================
+!README.md
+!requirements.txt
+!LICENSE
+!.gitignore
+!setup.py
+!pyproject.toml
+!Dockerfile
+!docker-compose.yml
+!Makefile
+
+# Keep example and template files
+!.env.example
+!config.example.py
+!data/sample_data.csv
+
+# Keep documentation
+!docs/
+!docs/**/*
+
+# Keep test files
+!tests/
+!tests/**/*
+
+# Keep source code
+!src/
+!src/**/*.py
+
+# Keep scripts
+!scripts/
+!scripts/**/*.py
+
+# Keep notebooks for documentation
+!notebooks/examples/
+!notebooks/tutorials/
