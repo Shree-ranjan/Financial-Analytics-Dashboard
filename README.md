@@ -56,7 +56,7 @@ Financial Analytics Dashboard/
 
 1. **Clone and Setup**
    ```bash
-   git clone <your-repo>
+   git clone https://github.com/Shree-ranjan/Financial-Analytics-Dashboard.git
    cd "Financial Analytics Dashboard"
    pip install -r requirements.txt
    ```
@@ -497,7 +497,7 @@ Contributions are welcome! Here's how to get started:
 ### **Development Setup**
 ```bash
 # Clone your fork
-git clone https://github.com/your-username/financial-analytics-dashboard.git
+git clone https://github.com/Shree-ranjan/Financial-Analytics-Dashboard.git
 cd financial-analytics-dashboard
 
 # Install dependencies
