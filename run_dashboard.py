@@ -44,7 +44,7 @@ def main():
     print("Starting all services...")
     print()
     
-    choice = input("Choose option:\n1. Streamlit Dashboard only\n2. FastAPI Server only\n3. Both services\n4. Quick demo\nEnter choice (1-4): ")
+    choice = input("Choose option:\n1. Streamlit Dashboard only\n2. FastAPI Server only\n3. Both services\n4. Quick demo\n5. Screenshot capture tool\nEnter choice (1-5): ")
     
     if choice == "1":
         print("\n🚀 Starting Streamlit Dashboard...")
@@ -88,6 +88,25 @@ def main():
     elif choice == "4":
         print("\n🎯 Running quick demo...")
         subprocess.run([sys.executable, "quick_test.py"])
+        
+    elif choice == "5":
+        print("\n📸 Starting screenshot capture tool...")
+        print("📝 First starting Streamlit Dashboard in background...")
+        
+        # Start Streamlit in background
+        streamlit_process = subprocess.Popen([
+            sys.executable, "-m", "streamlit", "run", 
+            "src/dashboard/main_dashboard.py", 
+            "--server.port", "8501"
+        ])
+        
+        time.sleep(3)
+        print("🌐 Opening dashboard in browser...")
+        Thread(target=lambda: webbrowser.open("http://localhost:8501")).start()
+        
+        time.sleep(2)
+        print("📷 Starting screenshot capture helper...")
+        subprocess.run([sys.executable, "capture_screenshots.py"])
         
     else:
         print("❌ Invalid choice. Please run again.")

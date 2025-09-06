@@ -198,6 +198,12 @@ def main():
         print(f"   • Portfolio analysis ✅")
         print(f"   • Multiple data sources ✅")
         
+        print(f"\n📱 Dashboard & Visualization:")
+        print(f"   📊 Streamlit Dashboard: Run 'streamlit run src/dashboard/main_dashboard.py'")
+        print(f"   📸 Screenshot Tool: Run 'python capture_screenshots.py' after starting dashboard")
+        print(f"   📘 Screenshot Guide: See docs/screenshot_guide.md for detailed instructions")
+        print(f"   🌐 API Documentation: Available at http://localhost:8000/docs when API is running")
+        
     else:
         print("\n❌ Basic test failed. Check internet connection.")
 

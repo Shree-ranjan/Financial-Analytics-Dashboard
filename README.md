@@ -85,7 +85,22 @@ python -m streamlit run src/dashboard/main_dashboard.py
 - 💼 Portfolio analysis with performance metrics
 - 📱 Interactive, responsive web interface
 
-#### **Option 2: FastAPI Backend** ⭐ **PROFESSIONAL**
+#### **Option 2: Screenshot Capture Tool** ⭐ **FOR DOCUMENTATION**
+```bash
+# First run the dashboard in one terminal
+python -m streamlit run src/dashboard/main_dashboard.py
+
+# Then run the screenshot capture helper in another terminal
+python capture_screenshots.py
+```
+**Opens at:** `http://localhost:8501`
+
+**Features:**
+- 📸 Automated browser opening for screenshot capture
+- 📁 Organized saving of dashboard views
+- 🖼️ Pre-defined naming for consistent documentation
+
+#### **Option 3: FastAPI Backend** ⭐ **PROFESSIONAL**
 ```bash
 python -m uvicorn src.api.main:app --host localhost --port 8000 --reload
 ```
@@ -98,13 +113,13 @@ python -m uvicorn src.api.main:app --host localhost --port 8000 --reload
 - `GET /market/movers` - Top gainers and losers
 - `GET /health` - System health check
 
-#### **Option 3: Quick Demo** ⭐ **INSTANT RESULTS**
+#### **Option 4: Quick Demo** ⭐ **INSTANT RESULTS**
 ```bash
 python quick_test.py
 ```
 **See real-time analysis in your terminal instantly!**
 
-#### **Option 4: Easy Launcher** ⭐ **BEGINNER-FRIENDLY**
+#### **Option 5: Easy Launcher** ⭐ **BEGINNER-FRIENDLY**
 ```bash
 python run_dashboard.py
 ```
@@ -114,7 +129,7 @@ python run_dashboard.py
 
 ### **Real-time Market Data** ✅ **WORKING NOW**
 ```
-🏦 FINANCIAL ANALYTICS DASHBOARD - LIVE TEST
+ Bakan FINANCIAL ANALYTICS DASHBOARD - LIVE TEST
 ============================================================
 ✅ AAPL: $239.78 (+18.30% monthly return)
 ✅ GOOGL: $232.30 (+9.76% best performer)
@@ -126,7 +141,26 @@ python run_dashboard.py
 
 ### **📊 Dashboard Screenshots**
 
-> **📸 Live Screenshots Available**: Visit the running dashboard to see:
+![Dashboard Overview](screenshots/dashboard_overview.png)
+*Main dashboard showing real-time stock data and technical indicators*
+
+![Candlestick Chart](screenshots/candlestick_chart.png)
+*Interactive candlestick chart with RSI, Moving Averages, and Bollinger Bands*
+
+![Portfolio Analysis](screenshots/portfolio_analysis.png)
+*Portfolio performance tracking with multiple stocks*
+
+![Trading Signals](screenshots/trading_signals.png)
+*Automated trading signals based on technical analysis*
+
+> **📸 How to Capture Screenshots**: 
+> 1. Run the dashboard with `streamlit run src/dashboard/main_dashboard.py`
+> 2. Navigate to `http://localhost:8501` in your browser
+> 3. Capture screenshots of the main dashboard views
+> 4. Save images in the `screenshots/` directory with the names shown above
+> 5. For best results, use high-resolution images (1920x1080 or higher)
+> 
+> **📘 Detailed Guide**: See [Screenshot Guide](docs/screenshot_guide.md) for comprehensive instructions on capturing, organizing, and maintaining dashboard screenshots.
 
 **Streamlit Dashboard**: `http://localhost:8501`
 - Interactive candlestick charts with real-time price updates
@@ -165,28 +199,43 @@ python run_dashboard.py
 - **Volume Analysis**: Trading volume patterns and anomalies
 - **Price Action**: Candlestick patterns and support/resistance levels
 
-### **3. ML Forecasting Models** 🔄 **FRAMEWORK READY**
+### **3. Visual Documentation** 📸 **IMPORTANT FOR PROFESSIONAL SHOWCASE**
+Professional-quality screenshots are essential for showcasing this dashboard on platforms like LinkedIn. The visual elements demonstrate:
+
+- **📊 Interactive Dashboard UI**: Modern, responsive interface with real-time data
+- **📈 Technical Analysis Charts**: Professional-grade visualizations with multiple indicators
+- **💼 Portfolio Management Views**: Comprehensive performance tracking and analytics
+- **🚨 Trading Signals Display**: Automated recommendations with clear visual indicators
+
+> **📸 Screenshot Best Practices**:
+> - Capture all major dashboard views (overview, charts, portfolio, signals)
+> - Use high-resolution images (1920x1080 or higher)
+> - Ensure data is visible but remove any sensitive information
+> - Save in PNG format for best quality in documentation
+> - Update images regularly to show current UI/features
+
+### **4. ML Forecasting Models** 🔄 **FRAMEWORK READY**
 - **LSTM Networks**: Deep learning for complex pattern recognition
 - **ARIMA Models**: Classical time series analysis
 - **Prophet Integration**: Facebook's robust forecasting (optional)
 - **Ensemble Methods**: Combined model predictions for improved accuracy
 - **Model Factory**: Easy extensibility for new forecasting algorithms
 
-### **4. Portfolio Analytics** ✅ **COMPLETE**
+### **5. Portfolio Analytics** ✅ **COMPLETE**
 - **Multi-stock Portfolio Tracking**: Real-time performance monitoring
 - **Return Calculations**: Daily, monthly, and custom period returns
 - **Risk Metrics**: Volatility, Sharpe ratio approximations
 - **Performance Comparison**: Best/worst performers identification
 - **Portfolio Visualization**: Interactive charts and performance graphs
 
-### **5. Interactive Dashboards** ✅ **COMPLETE**
+### **6. Interactive Dashboards** ✅ **COMPLETE**
 - **Streamlit Web Interface**: Professional, responsive dashboard
 - **Real-time Charts**: Candlestick charts with technical overlays
 - **FastAPI Backend**: RESTful API with comprehensive documentation
 - **Trading Signals**: Automated buy/sell recommendations
 - **Market Intelligence**: Trending stocks and market movers
 
-### **6. Trading Signal Generation** ✅ **COMPLETE**
+### **7. Trading Signal Generation** ✅ **COMPLETE**
 - **RSI Signals**: Overbought (>70) and Oversold (<30) alerts
 - **Moving Average Crossovers**: Bullish/bearish trend identification
 - **Bollinger Band Breakouts**: Price volatility and breakout signals
@@ -196,7 +245,7 @@ python run_dashboard.py
 ## 🔧 **Technical Implementation**
 
 ### **Data Flow Architecture**
-```mermaid
+```
 graph TB
     A[Financial APIs] --> B[Data Ingestion Service]
     B --> C[Data Validation]
